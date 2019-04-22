@@ -1,0 +1,31 @@
+{{> nav/index}}
+
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>{{this.title}}</h1>
+            <h3>{{this.subtitle}}</h3>
+        </div>
+    </div>
+</div>
+
+<div id="articles">
+    {{#each articles}}
+        <div>
+            <div class="row">
+                <div class="col col-md-8">
+                        <h1>{{this.title}}</h1>
+                        <p>{{this.slug}}</p>
+                        <p>{{this.teaser}}</p>
+                </div>
+                <div class="col col-md-2">
+                        <button data-id="{{this.id}}" type="submit" class="btn btn-success save">Save</button>
+                </div>
+                <div class="col col-md-2">
+                        <button data-id="{{this.id}}" type="submit" class="btn btn-danger delete">Remove</button>
+                </div>
+            </div>
+        </div>
+        <hr />
+    {{/each}}
+</div>

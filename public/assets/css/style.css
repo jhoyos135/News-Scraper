@@ -1,0 +1,11 @@
+body {
+    background: rgb(224, 195, 201);
+    color: #333;
+}
+
+#wrapper {
+    margin-top: 55px;
+}
+#scrapeBtn {
+    float: right;
+}
