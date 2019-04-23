@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
     Article.find({})
     .where('saved').equals(false)
     .where('deleted').equals(false)
-    .sort('date')
+    .sort('-date')
     .limit(20)
     .exec((error, articles) => {
         if(error) {
