@@ -8,16 +8,14 @@
             <div class="modal-body">
                 {{#if this.notes}}
                     {{#each this.notes}}
-                        <div class="well">
-                            <div class="row">
-                                <div class="col col-md-10">
+                            <div class="row text-center">
+                                <div class="col col-md-6">
                                     <p>{{this.text}}</p>
                                 </div>
-                                <div class="col col-md-2">
+                                <div class="col col-md-6">
                                     <button data-id='{{this.id}}' type="submit" class="btn btn-danger note_delete">X</button>
                                 </div>
                             </div>
-                        </div>
                     {{/each}}
                 {{else}}
                         <div class="well">
@@ -27,15 +25,13 @@
             </div>
             <div class="modal-footer">
                 <div class="row">
-                    <div class="col col-md-8">
+                    <div class="col col-md-12">
                         <form class="form-inline" action="/api/notes/{{this.id}}" method="POST">
                             <input type="text" class="form-control" id="text" name="text" placeholder="Add a new note...">
                             <button type="submit" class="btn btn-info">Add Note</button>
                         </form>
                     </div>
-                    <div class="col col-md-4">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
+
                 </div>
             </div>
         </div>

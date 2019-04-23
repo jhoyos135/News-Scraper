@@ -7,7 +7,7 @@ delete_btn.forEach(single_delete => {
     single_delete.addEventListener('click', (e) => {
         let id = single_delete.dataset.id;
         e.preventDefault();
-        deleteData(`/api/articles/dismiss/${id}`);
+        deleteData(`/api/articles/delete/${id}`);
         saveData(`/api/articles/save/${id}`);
         location.reload();
     })

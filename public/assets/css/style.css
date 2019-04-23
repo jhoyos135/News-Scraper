@@ -6,6 +6,17 @@ body {
 #wrapper {
     margin-top: 55px;
 }
+
 #scrapeBtn {
     float: right;
+}
+
+.jumbotron {
+    background: none;
+    text-align: center;
+}
+
+.jumbotron h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
 }

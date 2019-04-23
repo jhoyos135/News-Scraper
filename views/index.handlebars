@@ -18,11 +18,13 @@
                         <p>{{this.slug}}</p>
                         <p>{{this.teaser}}</p>
                 </div>
-                <div class="col col-md-2">
-                        <button data-id="{{this.id}}" type="submit" class="btn btn-success save">Save</button>
-                </div>
-                <div class="col col-md-2">
-                        <button data-id="{{this.id}}" type="submit" class="btn btn-danger delete">Remove</button>
+                <div style="display: flex;">
+                    <div class="col col-md-2">
+                            <button data-id="{{this.id}}" type="submit" class="btn btn-success save">Save</button>
+                    </div>
+                    <div class="col col-md-2">
+                            <button data-id="{{this.id}}" type="submit" class="btn btn-danger delete">Remove</button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -14,7 +14,6 @@ router.get('/', (req, res) => {
     })
 });
 
-// get all saved articles
 router.get('/saved', (req, res) => {
     Article
         .find({})
@@ -60,7 +59,7 @@ router.post('/save/:id', (req, res) => {
         });
 });
 
-router.delete('/dismiss/:id', (req, res) => {
+router.delete('/delete/:id', (req, res) => {
     Article.findByIdAndUpdate(req.params.id,
         { $set: { deleted: true } },
         { new: true },
